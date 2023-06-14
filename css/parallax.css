@@ -1,0 +1,90 @@
+/*
+|----------------------------------------------------------------------------
+	Shiny Template Parallax CSS
+	Primary color: #1391a6
+|----------------------------------------------------------------------------
+*/
+
+/*
+|----------------------------------------------------------------------------
+| parallax
+|----------------------------------------------------------------------------
+*/
+.parallax::before {
+    background-color: rgba(0, 0, 0, 0.7);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.parallax {
+	background-attachment: fixed;
+	background-color: rgba(0, 0, 0, 0.7);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+	position: relative;
+	color: #fff;
+}
+.parallax .container {
+    position: relative;
+}
+
+/*
+|----------------------------------------------------------------------------
+| SERVICE
+|----------------------------------------------------------------------------
+*/
+#service.parallax {
+    background-image: url("../images/background/bg-1.jpg");
+}
+
+/*
+|----------------------------------------------------------------------------
+| PORTFOLIO
+|----------------------------------------------------------------------------
+*/
+#portfolio.parallax {
+    background-image: url("../images/background/bg-2.jpg");
+}
+
+/*
+|----------------------------------------------------------------------------
+| QUOTE
+|----------------------------------------------------------------------------
+*/
+#quotes-section {
+    background-image: url("../images/background/bg-3.jpg");
+}
+#quotes-section::before {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*
+|----------------------------------------------------------------------------
+| BLOG
+|----------------------------------------------------------------------------
+*/
+#blog.parallax {
+    background-image: url("../images/background/bg-3.jpg");
+}
+
+/*
+|----------------------------------------------------------------------------
+| TESTIMONIAL
+|----------------------------------------------------------------------------
+*/
+#testimonials.parallax {
+    background-image: url("../images/background/bg-6.jpg");
+}
+
+/*
+|----------------------------------------------------------------------------
+| success-story
+|----------------------------------------------------------------------------
+*/
+#success-story.parallax {
+    background-image: url("../images/background/bg-5.jpg");
+}
