@@ -43,12 +43,12 @@
 							<span class="menubar2"></span>
 							<span class="menubar3"></span>
 						</button>
-						<a class="navbar-brand d-md-block d-lg-none" href="index-4-style2.html">
+						<a class="navbar-brand d-md-block d-lg-none" href="index.html">
 							<img class="logo logo-color" src="images/logo.png" alt="logo">
 							<img class="logo logo-white" src="images/logo-white.png" alt="logo">
 						</a>
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<a class="navbar-brand d-none d-sm-none d-md-none d-lg-block" href="index-4-style2.html">
+							<a class="navbar-brand d-none d-sm-none d-md-none d-lg-block" href="index.html">
 								<img class="logo logo-color" src="images/logo.png" alt="logo">
 								<img class="logo logo-white" src="images/logo-white.png" alt="logo">
 							</a>
@@ -86,15 +86,15 @@
 	
 	<!-- start slider and home section -->
 	<section id="home" class="home">
-        <div class="home-top-banner banner-2">
+        <div class="home-top-banner banner-1">
             <div class="display-table">
                 <div class="display-table-cell">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12">
-								<div class="banner-content banner-content-fullwidth">
-									<h1 class="header-title-text">I'm Zinia Jones</h1>
-									<h3>Proffessional web designer &amp; Creative Director</h3>
+								<div class="banner-content">
+									<h1 class="header-title-text">I'm Steve Jones</h1>
+									<h3>Proffessional Photographer &amp; Creative Director</h3>
 									<ul class="list-inline list-social">
 										<li>
 											<a href="#" class="social-icon social-icon-facebook" target="_blank">
@@ -134,6 +134,46 @@
 										</li>
 									</ul><!--End list-social -->
 								</div><!--End banner-content -->
+								
+								<!-- start quoteForm-holder -->
+								<div class="quoteForm-holder">
+									<form id="quoteForm" name="free-quote" data-toggle="validator" class="quoteForm">
+										<h3 class="form-title">Get a free quote</h3>
+										<div id="msgQuoteSubmit" class="hidden"></div>
+										<div class="form-group">
+											<div class="help-block with-errors"></div>
+											<input name="fname" id="quoteName" placeholder="Full Name*" class="form-control" required data-error="Please enter Name" type="text"> 
+											<div class="input-group-icon"><i class="fas fa-user"></i></div>
+										</div><!--End form-group -->
+										<div class="form-group">
+											<div class="help-block with-errors"></div>
+											<input name="email" id="quoteEmail" placeholder="Email Address*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" class="form-control" required data-error="Please enter valid Email" type="email"> 
+											<div class="input-group-icon"><i class="fas fa-envelope"></i></div>
+										</div><!--End form-group -->
+										<div class="form-group">
+											<div class="help-block with-errors"></div>
+											<input name="phone" id="quotePhone" placeholder="Phone Nunber*" class="form-control" required data-error="Please enter valid Phone" type="text">
+											<div class="input-group-icon"><i class="fas fa-phone"></i></div> 
+										</div><!--End form-group -->
+										<div class="form-group">
+											<div class="help-block with-errors"></div>
+											<select name="service" id="quoteService" class="form-control" required data-error="Please Select Service">
+												<option value="">--- Select a Sevice* ---</option>
+												<option value="Web Design">Web Design</option>
+												<option value="Graphic Design">Graphic Design</option>
+												<option value="Flash Design">Flash Design</option>
+												<option value="Photography">Photography</option>
+												<option value="App Devlopment">App Devlopment</option>
+												<option value="Support">Support</option>
+											</select>
+											<div class="input-group-icon"><i class="fas fa-cogs"></i></div> 
+										</div><!--End form-group -->
+										<div class="form-group bottomMargin0">
+											<button type="submit" id="quoteSubmit" class="btn btn-shutter-out-horizontal disabled" style="pointer-events: all; cursor: pointer;">Send Request</button>									
+										</div><!--End form-group -->
+										<span class="sub-text">* Required fields</span>
+									</form>
+								</div><!--End quoteForm-holder -->
 							</div><!--End col-sm-12 -->
                         </div><!--End row -->
                     </div><!--End container -->
@@ -144,7 +184,7 @@
 	<!-- end slider and home section -->
 	
 	<!-- start About section -->
-	<section id="about" class="about about-timeline-style">
+	<section id="about" class="about about-box-style">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
@@ -160,12 +200,7 @@
 				</div><!-- end col -->
 				<div class="col-sm-12">
 					<div class="row">
-						<div class="col-sm-6">
-							<div class="profile-image">
-								<img src="images/profile/profile-image-2.jpg" alt="img-about">
-							</div><!-- end profile-image -->
-						</div><!-- end col -->
-						<div class="col-sm-6">
+						<div class="col-sm-7">
 							<div class="about-text">
 								<!-- start title-box -->
 								<div class="title-box">
@@ -180,101 +215,81 @@
 								</div><!-- end button-holder -->
 							</div><!-- about-text -->
 						</div><!-- end col -->
+						<div class="col-sm-5">
+							<div class="profile-image">
+								<img src="images/profile/profile-image-1.jpg" alt="img-about">
+							</div><!-- end profile-image -->
+						</div><!-- end col -->
 					</div><!-- end row -->
 				</div><!-- end col-sm-12 -->
 				<div class="col-sm-12">
-					<div class="icon-holder experience">
-						<i class="fas fa-paper-plane"></i>
-						<span class="sub-title text-bold">Work Experience</span>
-					</div>
-					<ul class="timeline">
-						<li class="timeline-right">
-							<div class="timeline-badge">
-								<i class="fas fa-calendar-alt"></i>
-								<p class="date-inverted">2016 - Current</p>
-							</div><!-- end timeline-badge -->
-							<div class="timeline-panel">
-								<div class="experience-content">
-									<h4>MGS PVT. LTD.</h4>
-									<h5>Creative Director</h5>
-									<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks.</p>
-								</div>
-							</div><!--end timeline-panel -->
-						</li><!-- end timeline-right -->
-						<li class="timeline-left">
-							<div class="timeline-badge">
-								<i class="fas fa-calendar-alt"></i>								
-								<p class="date">2015 - 2016</p>
-							</div><!-- end timeline-badge -->
-							<div class="timeline-panel">
-								<div class="experience-content">
-									<h4>MGS PVT. LTD.</h4>
-									<h5>Senior Designer </h5>
-									<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks.</p>
-								</div>
-							</div><!-- end timeline-panel -->
-						</li><!-- end timeline-left -->
-						<li class="timeline-right">
-							<div class="timeline-badge">
-								<i class="fas fa-calendar-alt"></i>
-								<p class="date-inverted">2013 - 2015</p>
-							</div><!-- end timeline-badge -->
-							<div class="timeline-panel">
-								<div class="experience-content">
-									<h4>MGS PVT. LTD.</h4>
-									<h5>Designer</h5>
-									<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks.</p>
-								</div>
-							</div><!-- end timeline-panel -->
-						</li><!-- end timeline-right -->
-					</ul><!-- end timeline -->
+					<!-- start title-box -->
+					<div class="title-box">
+						<h3 class="sub-title">Work <strong>Experience</strong></h3>
+					</div><!-- end title-box -->
+					<div class="row">
+						<div class="col-md-4">
+							<div class="experience-content">
+								<p class="range">2016 - Current</p>
+								<h4>MGS PVT. LTD.</h4>
+								<p class="text-bold">Creative Director</p>
+								<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks.</p>
+							</div><!-- end experience-content -->
+						</div><!-- end col -->
+						
+						<div class="col-md-4">
+							<div class="experience-content">
+								<p class="range">2015 - 2016</p>
+								<h4>MGS PVT. LTD.</h4>
+								<p class="text-bold">Senior Designer </p>
+								<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks.</p>
+							</div><!-- end experience-content -->
+						</div><!-- end col -->
+						
+						<div class="col-md-4">
+							<div class="experience-content">
+								<p class="range">2013 - 2015</p>
+								<h4>MGS PVT. LTD.</h4>
+								<p class="text-bold">Designer</p>
+								<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks.</p>
+							</div><!-- end experience-content -->
+						</div><!-- end col -->
+					</div><!-- end row -->
 				</div><!-- end col-sm-12 -->
+				
 				<div class="col-sm-12">
-					<div class="icon-holder education">
-						<i class="fas fa-graduation-cap"></i>
-						<span class="sub-title text-bold">Education</span>
-					</div>
-					<ul class="timeline">
-						<li class="timeline-left">
-							<div class="timeline-badge">
-								<i class="fas fa-calendar-alt"></i>
-								<p class="date">2010 - 2012</p>
-							</div><!-- end timeline-badge -->
-							<div class="timeline-panel">
-								<div class="experience-content">
-									<h4>Master's Degree</h4>
-									<h5>College Name here</h5>
-									<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks.</p>
-								</div>
-							</div><!--end timeline-panel -->
-						</li><!-- end timeline-left -->
-						<li class="timeline-right">
-							<div class="timeline-badge">
-								<i class="fas fa-calendar-alt"></i>								
-								<p class="date-inverted">2007 - 2010</p>
-							</div><!-- end timeline-badge -->
-							<div class="timeline-panel">
-								<div class="experience-content">
-									<h4>Bachelor's Degree</h4>
-									<h5>Institute Name here</h5>
-									<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks.</p>
-								</div>
-							</div><!-- end timeline-panel -->
-						</li><!-- end timeline-right -->
-						<li class="timeline-left">
-							<div class="timeline-badge">
-								<i class="fas fa-calendar-alt"></i>
-								<p class="date">2006 - 2007</p>
-							</div><!-- end timeline-badge -->
-							<div class="timeline-panel">
-								<div class="experience-content">
-									<h4>School Education</h4>
-									<h5>School Name here</h5>
-									<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks.</p>
-								</div>
-							</div><!-- end timeline-panel -->
-						</li><!-- end timeline-left -->
-					</ul><!-- end timeline -->
+					<!-- start title-box -->
+					<div class="title-box">
+						<h3 class="sub-title">My <strong>Education</strong></h3>
+					</div><!-- end title-box -->
+					<div class="row">
+						<div class="col-md-4">
+							<div class="experience-content">
+								<p class="range">2010 - 2012</p>
+								<h4>Master's Degree</h4>
+								<p class="text-bold">College Name here</p>
+								<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks.</p>
+							</div><!-- end experience-content -->
+						</div><!-- end col -->
+						
+						<div class="col-md-4">
+							<div class="experience-content">
+								<p class="range">2007 - 2010</p>
+								<h4>Bachelor's Degree</h4>
+								<p class="text-bold">Institute Name here</p>
+								<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks.</p>
+							</div><!-- end experience-content -->
+						</div><!-- end col -->
+						
+						<div class="col-md-4">
+							<div class="experience-content">
+								<p class="range">2006 - 2007</p>
+								<h4>School Education</h4>
+								<p class="text-bold">School Name here</p>
+								<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks.</p>
+							</div><!-- end experience-content -->
+						</div><!-- end col -->
+					</div><!-- end row -->
 				</div><!-- end col-sm-12 -->
 			</div><!-- end row -->	
 		</div><!-- end container -->  
@@ -282,7 +297,7 @@
 	<!-- end About section -->
 	
 	<!-- start service -->
-	<section id="service" class="service service-3-column parallax">
+	<section id="service" class="service service-2-column parallax">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
@@ -299,56 +314,8 @@
 						A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my heart.
 					</div><!-- end intro-text -->
 				</div><!-- end col -->
-				<div class="col-md-4 col-xs-6">
-					<div class="service-wrap color-border">
-						<div class="service-box">
-							<div class="service-box-wrap">
-								<i class="fas fa-cogs"></i>
-								<h3>App Devlopment</h3>
-								<p>A small river named Duden. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-								<a class="btn btn-shutter-out-horizontal" href="single-service.html">View Details</a>
-							</div>
-						</div><!-- end service-box -->
-					</div><!-- end service-wrap -->
-				</div><!-- end col -->
-				<div class="col-md-4 col-xs-6">
-					<div class="service-wrap color-border">
-						<div class="service-box">
-							<div class="service-box-wrap">
-								<i class="fas fa-paint-brush"></i>
-								<h3>Graphic Design</h3>
-								<p>A small river named Duden. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-								<a class="btn btn-shutter-out-horizontal" href="single-service.html">View Details</a>
-							</div>
-						</div><!-- end service-box -->
-					</div><!-- end service-wrap -->
-				</div><!-- end col -->
-				<div class="col-md-4 col-xs-6">
-					<div class="service-wrap color-border">
-						<div class="service-box">
-							<div class="service-box-wrap">
-								<i class="fas fa-bolt"></i>
-								<h3>Flash Design</h3>
-								<p>A small river named Duden. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-								<a class="btn btn-shutter-out-horizontal" href="single-service.html">View Details</a>
-							</div>
-						</div><!-- end service-box -->
-					</div><!-- end service-wrap -->
-				</div><!-- end col -->
-				<div class="col-md-4 col-xs-6">
-					<div class="service-wrap color-border">
-						<div class="service-box">
-							<div class="service-box-wrap">
-								<i class="fas fa-desktop"></i>
-								<h3>Web Design</h3>
-								<p>A small river named Duden. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-								<a class="btn btn-shutter-out-horizontal" href="single-service.html">View Details</a>
-							</div>
-						</div><!-- end service-box -->
-					</div><!-- end service-wrap -->
-				</div><!-- end col -->
-				<div class="col-md-4 col-xs-6">
-					<div class="service-wrap color-border">
+				<div class="col-md-6 col-xs-6">
+					<div class="service-wrap">
 						<div class="service-box">
 							<div class="service-box-wrap">
 								<i class="fas fa-camera"></i>
@@ -359,12 +326,36 @@
 						</div><!-- end service-box -->
 					</div><!-- end service-wrap -->
 				</div><!-- end col -->
-				<div class="col-md-4 col-xs-6">
-					<div class="service-wrap color-border">
+				<div class="col-md-6 col-xs-6">
+					<div class="service-wrap">
 						<div class="service-box">
 							<div class="service-box-wrap">
-								<i class="fas fa-umbrella"></i>
-								<h3>Support</h3>
+								<i class="fas fa-film"></i>
+								<h3>Video Editing</h3>
+								<p>A small river named Duden. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+								<a class="btn btn-shutter-out-horizontal" href="single-service.html">View Details</a>
+							</div>
+						</div><!-- end service-box -->
+					</div><!-- end service-wrap -->
+				</div><!-- end col -->
+				<div class="col-md-6 col-xs-6">
+					<div class="service-wrap">
+						<div class="service-box">
+							<div class="service-box-wrap">
+								<i class="fas fa-female"></i>
+								<h3>Modeling Photography</h3>
+								<p>A small river named Duden. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+								<a class="btn btn-shutter-out-horizontal" href="single-service.html">View Details</a>
+							</div>
+						</div><!-- end service-box -->
+					</div><!-- end service-wrap -->
+				</div><!-- end col -->
+				<div class="col-md-6 col-xs-6">
+					<div class="service-wrap">
+						<div class="service-box">
+							<div class="service-box-wrap">
+								<i class="fas fa-video"></i>
+								<h3>Video Productions</h3>
 								<p>A small river named Duden. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
 								<a class="btn btn-shutter-out-horizontal" href="single-service.html">View Details</a>
 							</div>
@@ -456,7 +447,7 @@
 				<div class="success-story-inner text-center">
 					<div class="row">
 						<div class="col-sm-6 col-lg-3">
-							<div class="counter-wrap color-border">
+							<div class="counter-wrap">
 								<div class="counter-icon"><i class="fas fa-trophy"></i></div>
 								<div class="counter-text">
 									<div class="counter">32</div>
@@ -465,7 +456,7 @@
 							</div><!-- end counter-wrap -->
 						</div><!-- end col -->
 						<div class="col-sm-6 col-lg-3">
-							<div class="counter-wrap color-border">
+							<div class="counter-wrap">
 								<div class="counter-icon"><i class="fas fa-book"></i></div>
 								<div class="counter-text">
 									<div class="counter">218</div>
@@ -474,7 +465,7 @@
 							</div><!-- end counter-wrap -->
 						</div><!-- end col -->
 						<div class="col-sm-6 col-lg-3">
-							<div class="counter-wrap color-border">
+							<div class="counter-wrap">
 								<div class="counter-icon"><i class="fas fa-coffee"></i></div>
 								<div class="counter-text">
 									<div class="counter">3360</div>
@@ -483,7 +474,7 @@
 							</div><!-- end counter-wrap -->
 						</div><!-- end col -->
 						<div class="col-sm-6 col-lg-3">
-							<div class="counter-wrap color-border">
+							<div class="counter-wrap">
 								<div class="counter-icon"><i class="fas fa-user-friends"></i></div>
 								<div class="counter-text">
 									<div class="counter">134502</div>
@@ -588,7 +579,7 @@
 	<!-- end Pricing Plan -->
 	
 	<!-- start portfolio -->
-	<section id="portfolio" class="filter-section parallax">
+	<section id="portfolio" class="filter-section portfolio-style2 parallax">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
@@ -618,7 +609,7 @@
 					</div><!--End filter-container -->
 					<div class="isotopeContainer">
 						<div class="row">
-							<div class="col-sm-6 col-md-6 col-lg-3 isotopeSelector websites">
+							<div class="col-sm-6 col-md-6 col-lg-3 no-space isotopeSelector websites">
 								<div class="portfolio-wrapper">
 									<img src="images/portfolio/thumb/1.jpg" alt="Project Title1">									
 									<div class="portfolio-overlay">
@@ -636,7 +627,7 @@
 									</div><!--End portfolio-overlay -->
 								</div><!--End portfolio-wrapper -->
 							</div><!-- end col -->
-							<div class="col-sm-6 col-md-6 col-lg-3 isotopeSelector photography">
+							<div class="col-sm-6 col-md-6 col-lg-3 no-space isotopeSelector photography">
 								<div class="portfolio-wrapper">
 									<img src="images/portfolio/thumb/2.jpg" alt="Project Title2">
 									<div class="portfolio-overlay">
@@ -654,7 +645,7 @@
 									</div><!--End portfolio-overlay -->
 								</div><!--End portfolio-wrapper -->
 							</div><!-- end col -->
-							<div class="col-sm-6 col-md-6 col-lg-3 isotopeSelector art">
+							<div class="col-sm-6 col-md-6 col-lg-3 no-space isotopeSelector art">
 								<div class="portfolio-wrapper">
 									<img src="images/portfolio/thumb/3.jpg" alt="Project Title3">
 									<div class="portfolio-overlay">
@@ -672,7 +663,7 @@
 									</div><!--End portfolio-overlay -->
 								</div><!--End portfolio-wrapper -->
 							</div><!-- end col -->
-							<div class="col-sm-6 col-md-6 col-lg-3 isotopeSelector photography">
+							<div class="col-sm-6 col-md-6 col-lg-3 no-space isotopeSelector photography">
 								<div class="portfolio-wrapper">
 									<img src="images/portfolio/thumb/4.jpg" alt="Project Title4">
 									<div class="portfolio-overlay">
@@ -690,7 +681,7 @@
 									</div><!--End portfolio-overlay -->
 								</div><!--End portfolio-wrapper -->
 							</div><!-- end col -->
-							<div class="col-sm-6 col-md-6 col-lg-3 isotopeSelector websites">
+							<div class="col-sm-6 col-md-6 col-lg-3 no-space isotopeSelector websites">
 								<div class="portfolio-wrapper">
 									<img src="images/portfolio/thumb/5.jpg" alt="Project Title5">
 									<div class="portfolio-overlay">
@@ -708,7 +699,7 @@
 									</div><!--End portfolio-overlay -->
 								</div><!--End portfolio-wrapper -->
 							</div><!-- end col -->
-							<div class="col-sm-6 col-md-6 col-lg-3 isotopeSelector illustrations">
+							<div class="col-sm-6 col-md-6 col-lg-3 no-space isotopeSelector illustrations">
 								<div class="portfolio-wrapper">
 									<img src="images/portfolio/thumb/6.jpg" alt="Project Title6">
 									<div class="portfolio-overlay">
@@ -726,7 +717,7 @@
 									</div><!--End portfolio-overlay -->
 								</div><!--End portfolio-wrapper -->
 							</div><!-- end col -->
-							<div class="col-sm-6 col-md-6 col-lg-3 isotopeSelector art">
+							<div class="col-sm-6 col-md-6 col-lg-3 no-space isotopeSelector art">
 								<div class="portfolio-wrapper">
 									<img src="images/portfolio/thumb/7.jpg" alt="Project Title7">
 									<div class="portfolio-overlay">
@@ -744,7 +735,7 @@
 									</div><!--End portfolio-overlay -->
 								</div><!--End portfolio-wrapper -->
 							</div><!-- end col -->
-							<div class="col-sm-6 col-md-6 col-lg-3 isotopeSelector illustrations">
+							<div class="col-sm-6 col-md-6 col-lg-3 no-space isotopeSelector illustrations">
 								<div class="portfolio-wrapper">
 									<img src="images/portfolio/thumb/8.jpg" alt="Project Title8">
 									<div class="portfolio-overlay">
@@ -789,7 +780,7 @@
 					</div><!-- end intro-text -->
 				</div><!--End col-sm-12 --> 					
 				<div class="col-md-6 col-lg-3">
-					<div class="team-wrap color-border">
+					<div class="team-wrap">
 						<div class="team-thumb">
 							<img src="images/team/team-1.jpg" alt="Thomas Ross">
 						</div><!-- end team-thumb -->
@@ -843,7 +834,7 @@
 					</div><!-- end team-wrap -->
 				</div><!-- end col -->
 				<div class="col-md-6 col-lg-3">
-					<div class="team-wrap color-border">
+					<div class="team-wrap">
 						<div class="team-thumb">
 							<img src="images/team/team-2.jpg" alt="Resa Rhythm">
 						</div><!-- end team-thumb -->
@@ -897,7 +888,7 @@
 					</div><!-- end team-wrap -->
 				</div><!-- end col -->
 				<div class="col-md-6 col-lg-3">
-					<div class="team-wrap color-border" >
+					<div class="team-wrap" >
 						<div class="team-thumb">
 							<img src="images/team/team-3.jpg" alt="Emma Jane">
 						</div><!-- end team-thumb -->
@@ -951,7 +942,7 @@
 					</div><!-- end team-wrap -->
 				</div><!-- end col -->
 				<div class="col-md-6 col-lg-3">
-					<div class="team-wrap color-border">
+					<div class="team-wrap">
 						<div class="team-thumb">
 							<img src="images/team/team-4.jpg" alt="John Marta">
 						</div><!-- end team-thumb -->
@@ -1034,7 +1025,7 @@
 	<!-- end quotes-section -->
 	
 	<!-- start blog -->
-	<section id="blog" class="blog blog-style2">
+	<section id="blog" class="blog blog-style1">
 		<div class="container">
 			<div class="row">	
 				<div class="col-sm-12">
@@ -1060,39 +1051,45 @@
 								<div class="post-thumb">
 									<img src="images/blog/thumb/1.jpg" alt="Blog Image">
 								</div><!--End post-thumb -->
-								<div class="post-content">
-									<div class="post-meta">
-										<span><i class="fas fa-user"></i><a href="#">Zinia Jones</a></span>
-										<span><i class="fas fa-calendar-alt"></i><a href="#">March 26, 2022</a></span>
-										<span><i class="fas fa-comments"></i><a href="#">8</a></span>
-									</div><!--End post-meta -->
-									<div class="post-title">
-										<h3><a href="single-blog.html">A small river named Duden flows by place</a></h3>
-									</div><!--End post-title -->
-									<div class="post-excerpt">
-										<p>The Big Oxmox advised her not to do so, because there were... <a class="btn-more" href="single-blog.html">Read More <i class="fas fa-angle-double-right"></i></a></p>
-									</div><!--End post-excerpt -->
+								<div class="post-content-bottom">
+									<div class="hover-overlay"></div>
+									<div class="content-inner">
+										<div class="post-meta">
+											<span><i class="fas fa-user"></i><a href="#">Steve Jones</a></span>
+											<span><i class="fas fa-calendar-alt"></i><a href="#">March 26, 2022</a></span>
+											<span><i class="fas fa-comments"></i><a href="#">8</a></span>
+										</div><!--End post-meta -->
+										<div class="post-title">
+											<h3><a href="single-blog.html">A small river named Duden flows by place</a></h3>
+										</div><!--End post-title -->
+										<div class="post-excerpt">
+											<p>The Big Oxmox advised her not to do so, because there were... <a class="btn-more" href="single-blog.html">Read More <i class="fas fa-angle-double-right"></i></a></p>
+										</div><!--End post-excerpt -->
+									</div><!--End content-inner -->
 								</div><!--End post-content -->
 							</article><!--End post-wrap -->
 						</div><!--End item -->
 						<div class="item">
 							<article class="post-wrap">
+								<div class="post-content-top">
+									<div class="hover-overlay"></div>
+									<div class="content-inner">
+										<div class="post-meta">
+											<span><i class="fas fa-user"></i><a href="#">Steve Jones</a></span>
+											<span><i class="fas fa-calendar-alt"></i><a href="#">March 26, 2022</a></span>
+											<span><i class="fas fa-comments"></i><a href="#">8</a></span>
+										</div><!--End post-meta -->
+										<div class="post-title">
+											<h3><a href="single-blog.html">A small river named Duden flows by place</a></h3>
+										</div><!--End post-title -->
+										<div class="post-excerpt">
+											<p>The Big Oxmox advised her not to do so, because there were... <a class="btn-more" href="single-blog.html">Read More <i class="fas fa-angle-double-right"></i></a></p>
+										</div><!--End post-excerpt -->
+									</div><!--End content-inner -->
+								</div><!--End post-content -->
 								<div class="post-thumb">
 									<img src="images/blog/thumb/2.jpg" alt="Blog Image">
 								</div><!--End post-thumb -->
-								<div class="post-content">
-									<div class="post-meta">
-										<span><i class="fas fa-user"></i><a href="#">Zinia Jones</a></span>
-										<span><i class="fas fa-calendar-alt"></i><a href="#">March 26, 2022</a></span>
-										<span><i class="fas fa-comments"></i><a href="#">42</a></span>
-									</div><!--End post-meta -->
-									<div class="post-title">
-										<h3><a href="single-blog.html">A small river named Duden flows by place</a></h3>
-									</div><!--End post-title -->
-									<div class="post-excerpt">
-										<p>The Big Oxmox advised her not to do so, because there were... <a class="btn-more" href="single-blog.html">Read More <i class="fas fa-angle-double-right"></i></a></p>
-									</div><!--End post-excerpt -->
-								</div><!--End post-content -->
 							</article><!--End post-wrap -->
 						</div><!--End item -->
 						<div class="item">
@@ -1100,39 +1097,45 @@
 								<div class="post-thumb">
 									<img src="images/blog/thumb/3.jpg" alt="Blog Image">
 								</div><!--End post-thumb -->
-								<div class="post-content">
-									<div class="post-meta">
-										<span><i class="fas fa-user"></i><a href="#">Zinia Jones</a></span>
-										<span><i class="fas fa-calendar-alt"></i><a href="#">March 26, 2022</a></span>
-										<span><i class="fas fa-comments"></i><a href="#">8</a></span>
-									</div><!--End post-meta -->
-									<div class="post-title">
-										<h3><a href="single-blog.html">A small river named Duden flows by place</a></h3>
-									</div><!--End post-title -->
-									<div class="post-excerpt">
-										<p>The Big Oxmox advised her not to do so, because there were... <a class="btn-more" href="single-blog.html">Read More <i class="fas fa-angle-double-right"></i></a></p>
-									</div><!--End post-excerpt -->
+								<div class="post-content-bottom">
+									<div class="hover-overlay"></div>
+									<div class="content-inner">
+										<div class="post-meta">
+											<span><i class="fas fa-user"></i><a href="#">Steve Jones</a></span>
+											<span><i class="fas fa-calendar-alt"></i><a href="#">March 26, 2022</a></span>
+											<span><i class="fas fa-comments"></i><a href="#">8</a></span>
+										</div><!--End post-meta -->
+										<div class="post-title">
+											<h3><a href="single-blog.html">A small river named Duden flows by place</a></h3>
+										</div><!--End post-title -->
+										<div class="post-excerpt">
+											<p>The Big Oxmox advised her not to do so, because there were... <a class="btn-more" href="single-blog.html">Read More <i class="fas fa-angle-double-right"></i></a></p>
+										</div><!--End post-excerpt -->
+									</div><!--End content-inner -->
 								</div><!--End post-content -->
-							</article><!--End post-wrap -->
+							</article>
 						</div><!--End item -->
 						<div class="item">
 							<article class="post-wrap">
+								<div class="post-content-top">
+									<div class="hover-overlay"></div>
+									<div class="content-inner">
+										<div class="post-meta">
+											<span><i class="fas fa-user"></i><a href="#">Steve Jones</a></span>
+											<span><i class="fas fa-calendar-alt"></i><a href="#">March 26, 2022</a></span>
+											<span><i class="fas fa-comments"></i><a href="#">8</a></span>
+										</div><!--End post-meta -->
+										<div class="post-title">
+											<h3><a href="single-blog.html">A small river named Duden flows by place</a></h3>
+										</div><!--End post-title -->
+										<div class="post-excerpt">
+											<p>The Big Oxmox advised her not to do so, because there were... <a class="btn-more" href="single-blog.html">Read More <i class="fas fa-angle-double-right"></i></a></p>
+										</div><!--End post-excerpt -->
+									</div><!--End content-inner -->
+								</div><!--End post-content -->
 								<div class="post-thumb">
 									<img src="images/blog/thumb/4.jpg" alt="Blog Image">
 								</div><!--End post-thumb -->
-								<div class="post-content">
-									<div class="post-meta">
-										<span><i class="fas fa-user"></i><a href="#">Zinia Jones</a></span>
-										<span><i class="fas fa-calendar-alt"></i><a href="#">March 26, 2022</a></span>
-										<span><i class="fas fa-comments"></i><a href="#">8</a></span>
-									</div><!--End post-meta -->
-									<div class="post-title">
-										<h3><a href="single-blog.html">A small river named Duden flows by place</a></h3>
-									</div><!--End post-title -->
-									<div class="post-excerpt">
-										<p>The Big Oxmox advised her not to do so, because there were... <a class="btn-more" href="single-blog.html">Read More <i class="fas fa-angle-double-right"></i></a></p>
-									</div><!--End post-excerpt -->
-								</div><!--End post-content -->
 							</article><!--End post-wrap -->
 						</div><!--End item -->
 						<div class="item">
@@ -1140,39 +1143,45 @@
 								<div class="post-thumb">
 									<img src="images/blog/thumb/5.jpg" alt="Blog Image">
 								</div><!--End post-thumb -->
-								<div class="post-content">
-									<div class="post-meta">
-										<span><i class="fas fa-user"></i><a href="#">Zinia Jones</a></span>
-										<span><i class="fas fa-calendar-alt"></i><a href="#">March 26, 2022</a></span>
-										<span><i class="fas fa-comments"></i><a href="#">8</a></span>
-									</div><!--End post-meta -->
-									<div class="post-title">
-										<h3><a href="single-blog.html">A small river named Duden flows by place</a></h3>
-									</div><!--End post-title -->
-									<div class="post-excerpt">
-										<p>The Big Oxmox advised her not to do so, because there were... <a class="btn-more" href="single-blog.html">Read More <i class="fas fa-angle-double-right"></i></a></p>
-									</div><!--End post-excerpt -->
+								<div class="post-content-bottom">
+									<div class="hover-overlay"></div>
+									<div class="content-inner">
+										<div class="post-meta">
+											<span><i class="fas fa-user"></i><a href="#">Steve Jones</a></span>
+											<span><i class="fas fa-calendar-alt"></i><a href="#">March 26, 2022</a></span>
+											<span><i class="fas fa-comments"></i><a href="#">8</a></span>
+										</div><!--End post-meta -->
+										<div class="post-title">
+											<h3><a href="single-blog.html">A small river named Duden flows by place</a></h3>
+										</div><!--End post-title -->
+										<div class="post-excerpt">
+											<p>The Big Oxmox advised her not to do so, because there were... <a class="btn-more" href="single-blog.html">Read More <i class="fas fa-angle-double-right"></i></a></p>
+										</div><!--End post-excerpt -->
+									</div><!--End content-inner -->
 								</div><!--End post-content -->
 							</article><!--End post-wrap -->
 						</div><!--End item -->
 						<div class="item">
 							<article class="post-wrap">
+								<div class="post-content-top">
+									<div class="hover-overlay"></div>
+									<div class="content-inner">
+										<div class="post-meta">
+											<span><i class="fas fa-user"></i><a href="#">Steve Jones</a></span>
+											<span><i class="fas fa-calendar-alt"></i><a href="#">March 26, 2022</a></span>
+											<span><i class="fas fa-comments"></i><a href="#">8</a></span>
+										</div><!--End post-meta -->
+										<div class="post-title">
+											<h3><a href="single-blog.html">A small river named Duden flows by place</a></h3>
+										</div><!--End post-title -->
+										<div class="post-excerpt">
+											<p>The Big Oxmox advised her not to do so, because there were... <a class="btn-more" href="single-blog.html">Read More <i class="fas fa-angle-double-right"></i></a></p>
+										</div><!--End post-excerpt -->
+									</div><!--End content-inner -->
+								</div><!--End post-content -->
 								<div class="post-thumb">
 									<img src="images/blog/thumb/6.jpg" alt="Blog Image">
 								</div><!--End post-thumb -->
-								<div class="post-content">
-									<div class="post-meta">
-										<span><i class="fas fa-user"></i><a href="#">Zinia Jones</a></span>
-										<span><i class="fas fa-calendar-alt"></i><a href="#">March 26, 2022</a></span>
-										<span><i class="fas fa-comments"></i><a href="#">8</a></span>
-									</div><!--End post-meta -->
-									<div class="post-title">
-										<h3><a href="single-blog.html">A small river named Duden flows by place</a></h3>
-									</div><!--End post-title -->
-									<div class="post-excerpt">
-										<p>The Big Oxmox advised her not to do so, because there were... <a class="btn-more" href="single-blog.html">Read More <i class="fas fa-angle-double-right"></i></a></p>
-									</div><!--End post-excerpt -->
-								</div><!--End post-content -->
 							</article><!--End post-wrap -->
 						</div><!--End item -->
 						<div class="item">
@@ -1180,39 +1189,45 @@
 								<div class="post-thumb">
 									<img src="images/blog/thumb/7.jpg" alt="Blog Image">
 								</div><!--End post-thumb -->
-								<div class="post-content">
-									<div class="post-meta">
-										<span><i class="fas fa-user"></i><a href="#">Zinia Jones</a></span>
-										<span><i class="fas fa-calendar-alt"></i><a href="#">March 26, 2022</a></span>
-										<span><i class="fas fa-comments"></i><a href="#">8</a></span>
-									</div><!--End post-meta -->
-									<div class="post-title">
-										<h3><a href="single-blog.html">A small river named Duden flows by place</a></h3>
-									</div><!--End post-title -->
-									<div class="post-excerpt">
-										<p>The Big Oxmox advised her not to do so, because there were... <a class="btn-more" href="single-blog.html">Read More <i class="fas fa-angle-double-right"></i></a></p>
-									</div><!--End post-excerpt -->
+								<div class="post-content-bottom">
+									<div class="hover-overlay"></div>
+									<div class="content-inner">
+										<div class="post-meta">
+											<span><i class="fas fa-user"></i><a href="#">Steve Jones</a></span>
+											<span><i class="fas fa-calendar-alt"></i><a href="#">March 26, 2022</a></span>
+											<span><i class="fas fa-comments"></i><a href="#">8</a></span>
+										</div><!--End post-meta -->
+										<div class="post-title">
+											<h3><a href="single-blog.html">A small river named Duden flows by place</a></h3>
+										</div><!--End post-title -->
+										<div class="post-excerpt">
+											<p>The Big Oxmox advised her not to do so, because there were... <a class="btn-more" href="single-blog.html">Read More <i class="fas fa-angle-double-right"></i></a></p>
+										</div><!--End post-excerpt -->
+									</div><!--End content-inner -->
 								</div><!--End post-content -->
 							</article><!--End post-wrap -->
 						</div><!--End item -->
 						<div class="item">
 							<article class="post-wrap">
+								<div class="post-content-top">
+									<div class="hover-overlay"></div>
+									<div class="content-inner">
+										<div class="post-meta">
+											<span><i class="fas fa-user"></i><a href="#">Steve Jones</a></span>
+											<span><i class="fas fa-calendar-alt"></i><a href="#">March 26, 2022</a></span>
+											<span><i class="fas fa-comments"></i><a href="#">8</a></span>
+										</div><!--End post-meta -->
+										<div class="post-title">
+											<h3><a href="single-blog.html">A small river named Duden flows by place</a></h3>
+										</div><!--End post-title -->
+										<div class="post-excerpt">
+											<p>The Big Oxmox advised her not to do so, because there were... <a class="btn-more" href="single-blog.html">Read More <i class="fas fa-angle-double-right"></i></a></p>
+										</div><!--End post-excerpt -->
+									</div><!--End content-inner -->
+								</div><!--End post-content -->
 								<div class="post-thumb">
 									<img src="images/blog/thumb/8.jpg" alt="Blog Image">
 								</div><!--End post-thumb -->
-								<div class="post-content">
-									<div class="post-meta">
-										<span><i class="fas fa-user"></i><a href="#">Zinia Jones</a></span>
-										<span><i class="fas fa-calendar-alt"></i><a href="#">March 26, 2022</a></span>
-										<span><i class="fas fa-comments"></i><a href="#">8</a></span>
-									</div><!--End post-meta -->
-									<div class="post-title">
-										<h3><a href="single-blog.html">A small river named Duden flows by place </a></h3>
-									</div><!--End post-title -->
-									<div class="post-excerpt">
-										<p>The Big Oxmox advised her not to do so, because there were... <a class="btn-more" href="single-blog.html">Read More <i class="fas fa-angle-double-right"></i></a></p>
-									</div><!--End post-excerpt -->
-								</div><!--End post-content -->
 							</article><!--End post-wrap -->
 						</div><!--End item -->
 					</div><!-- end carousel -->
@@ -1335,7 +1350,7 @@
 							</div><!-- end form-group -->
 							<div class="form-group col-lg-4">
 								<div class="help-block with-errors"></div>
-								<input name="phone" id="phone" placeholder="Contact Phone*" pattern="^\+?\d{6,16}" class="form-control" type="text" required data-error="Please enter valid Phone">
+								<input name="phone" id="phone" placeholder="Contact Phone*" class="form-control" type="text" required data-error="Please enter valid Phone">
 								<div class="input-group-icon"><i class="fas fa-phone"></i></div> 
 							</div><!-- end form-group -->
 							<div class="form-group col-sm-12">
@@ -1345,7 +1360,7 @@
 							</div><!-- end form-group -->
 							<div class="form-group col-sm-12">
 								<button type="submit" id="submit" class="btn btn-shutter-out-horizontal">Send</button>
-							</div><!-- end form-group -->
+							</div><!-- end form-group -->					
 						</div><!-- end row -->
 						<span class="sub-text">* Required fields</span>
 						<div class="clearfix"></div>
