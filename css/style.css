@@ -1046,6 +1046,12 @@ svg:not(:root) {
     margin: 0 0 30px;
     text-align: center;
 }
+.service-wrap span {
+    font-weight: bold;
+}
+.app-dev-service {
+    margin-bottom: 12px !important;
+}
 .service-box .btn {
     margin: 0;
 }
