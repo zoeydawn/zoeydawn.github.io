@@ -1,196 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1, maximum-scale=1"
+    />
 
-<head>
-	<meta charset="utf-8">
-	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
+    <title>Zoey - Full Stack Web Developer</title>
+    <!-- set your website meta description and keywords -->
+    <meta
+      name="description"
+      content="Zoey Dawn Moore is a Full Stack Web Developer and Modern Web Specialist"
+    />
+    <meta
+      name="keywords"
+      content="Full Stack Web Development, React, JavaScript, Next.js, Firebase, Supabase, Typescript, Git, Tailwind CSS, Linux, Node.js, SQL Databases, PostgreSQL, SQLight, GraphQL, Express.js, MongoDB, app security, Sass, HTML, CSS, Rust, Svelt, Redis, SurrealDB"
+    />
+    <!-- set your website favicon -->
+    <link href="favicon.ico" rel="icon" />
 
-	<title>Zoey - Full Stack Web Developer</title>
-	<!-- set your website meta description and keywords -->
-	<meta name="description" content="Zoey Dawn Moore is a Full Stack Web Developer and Modern Web Specialist">
-	<meta name="keywords"
-		content="Full Stack Web Development, React, JavaScript, Next.js, Firebase, Supabase, Typescript, Git, Tailwind CSS, Linux, Node.js, SQL Databases, PostgreSQL, SQLight, GraphQL, Express.js, MongoDB, app security, Sass, HTML, CSS, Rust, Svelt, Redis, SurrealDB">
-	<!-- set your website favicon -->
-	<link href="favicon.ico" rel="icon">
+    <!-- Bootstrap Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Font Awesome Stylesheets -->
+    <link rel="stylesheet" href="css/fontawesome/all.min.css" />
+    <!-- Owl Carousel Stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- Lightbox Stylesheets -->
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <!-- Parallax Stylesheets -->
+    <link rel="stylesheet" href="css/parallax.css" type="text/css" />
+    <!-- Template Main Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <!-- Responsive Stylesheets -->
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+  </head>
 
-	<!-- Bootstrap Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- Font Awesome Stylesheets -->
-	<link rel="stylesheet" href="css/fontawesome/all.min.css">
-	<!-- Owl Carousel Stylesheets -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Lightbox Stylesheets -->
-	<link rel="stylesheet" href="css/lightbox.min.css">
-	<!-- Parallax Stylesheets -->
-	<link rel="stylesheet" href="css/parallax.css" type="text/css">
-	<!-- Template Main Stylesheets -->
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<!-- Responsive Stylesheets -->
-	<link rel="stylesheet" href="css/responsive.css" type="text/css">
-
-</head>
-
-<body>
-	<!-- start Header -->
-	<header id="header" class="header fixed-top headerbg-darkcolor nav-container">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<!-- Navigation Menu -->
-					<nav class="navbar navbar-expand-lg navbar-light mgsbsnavbar">
-						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-							data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-							aria-expanded="false" aria-label="Toggle navigation" onclick="mgsChangeMenubar(this)">
-							<span class="menubar1"></span>
-							<span class="menubar2"></span>
-							<span class="menubar3"></span>
-						</button>
-						<a class="navbar-brand d-md-block d-lg-none" href="index-4-style2.html">
-							<img class="logo logo-color" src="images/logo.png" alt="logo">
-							<img class="logo logo-white" src="images/logo-white.png" alt="logo">
-						</a>
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<a class="navbar-brand d-none d-sm-none d-md-none d-lg-block" href="index-4-style2.html">
-								<img class="logo logo-color" src="images/logo.png" alt="logo">
-								<img class="logo logo-white" src="images/logo-white.png" alt="logo">
-							</a>
-							<ul class="navbar-nav ml-auto">
-								<li class="nav-item">
-									<a class="nav-link active" href="#home">Home</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#about">About</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#service">Skills</a>
-								</li>
-								<!-- <li class="nav-item">
+  <body>
+    <!-- start Header -->
+    <header
+      id="header"
+      class="header fixed-top headerbg-darkcolor nav-container"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <!-- Navigation Menu -->
+            <nav class="navbar navbar-expand-lg navbar-light mgsbsnavbar">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                onclick="mgsChangeMenubar(this)"
+              >
+                <span class="menubar1"></span>
+                <span class="menubar2"></span>
+                <span class="menubar3"></span>
+              </button>
+              <a
+                class="navbar-brand d-md-block d-lg-none"
+                href="index-4-style2.html"
+              >
+                <img class="logo logo-color" src="images/logo.png" alt="logo" />
+                <img
+                  class="logo logo-white"
+                  src="images/logo-white.png"
+                  alt="logo"
+                />
+              </a>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a
+                  class="navbar-brand d-none d-sm-none d-md-none d-lg-block"
+                  href="index-4-style2.html"
+                >
+                  <img
+                    class="logo logo-color"
+                    src="images/logo.png"
+                    alt="logo"
+                  />
+                  <img
+                    class="logo logo-white"
+                    src="images/logo-white.png"
+                    alt="logo"
+                  />
+                </a>
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#service">Skills</a>
+                  </li>
+                  <!-- <li class="nav-item">
 									<a class="nav-link" href="#pricing">Pricing</a>
 								</li> -->
-								<!-- <li class="nav-item">
+                  <!-- <li class="nav-item">
 									<a class="nav-link" href="#portfolio">Portfolio</a>
 								</li> -->
-								<!-- <li class="nav-item">
+                  <!-- <li class="nav-item">
 									<a class="nav-link" href="#blog">Blog</a>
 								</li> -->
-								<li class="nav-item">
-									<a class="nav-link" href="#contact">Contact</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
-					<!-- end Navigation Menu -->
-				</div><!--End col-sm-12 -->
-			</div><!-- end row -->
-		</div><!--End container -->
-	</header>
-	<!-- end Header -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <!-- end Navigation Menu -->
+          </div>
+          <!--End col-sm-12 -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!--End container -->
+    </header>
+    <!-- end Header -->
 
-	<!-- start slider and home section -->
-	<section id="home" class="home">
-		<div class="home-top-banner banner-2">
-			<div class="display-table">
-				<div class="display-table-cell">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="banner-content banner-content-fullwidth">
-									<h1 class="header-title-text">I'm Zoey</h1>
-									<h3>Full Stack Developer, Modern Web Specialist</h3>
-									<ul class="list-inline list-social">
-										<li>
-											<a href="https://github.com/zoeydawn"
-												class="social-icon social-icon-facebook" target="_blank">
-
-												<i class="fab fa-github"></i>
-												<i class="fab fa-github"></i>
-											</a>
-										</li>
-										<!-- <li>
+    <!-- start slider and home section -->
+    <section id="home" class="home">
+      <div class="home-top-banner banner-2">
+        <div class="display-table">
+          <div class="display-table-cell">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="banner-content banner-content-fullwidth">
+                    <h1 class="header-title-text">I'm Zoey</h1>
+                    <h3>Full Stack Developer, Modern Web Specialist</h3>
+                    <ul class="list-inline list-social">
+                      <li>
+                        <a
+                          href="https://github.com/zoeydawn"
+                          class="social-icon social-icon-facebook"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </li>
+                      <!-- <li>
 											<a href=""
 												class="social-icon social-icon-twitter" target="_blank">
 												<i class="fab fa-brands fa-threads"></i>
 												<i class="fab fa-brands fa-threads"></i>
 											</a>
 										</li> -->
-										<li>
-											<a href="https://www.linkedin.com/in/zoeydawn/"
-												class="social-icon social-icon-linkedin" target="_blank">
-												<i class="fab fa-linkedin-in"></i>
-												<i class="fab fa-linkedin-in"></i>
-											</a>
-										</li>
-										<li>
-											<a href="https://www.instagram.com/spacecowgirlgringa/"
-												class="social-icon social-icon-facebook" target="_blank">
-												<i class="fab fa-instagram"></i>
-												<i class="fab fa-instagram"></i>
-											</a>
-										</li>
-										<li>
-											<a href="https://t.me/zoeydawn" class="social-icon social-icon-facebook"
-												target="_blank">
-												<i class="fab fa-telegram"></i>
-												<i class="fab fa-telegram"></i>
-											</a>
-										</li>
-										<!-- TODO: create a whatsapp color style -->
-										<li>
-											<a href="https://wa.me/19199601124" class="social-icon social-icon-twitter"
-												target="_blank">
-												<i class="fab fa-whatsapp"></i>
-												<i class="fab fa-whatsapp"></i>
-											</a>
-										</li>
-										<!-- <li>
+                      <li>
+                        <a
+                          href="https://www.linkedin.com/in/zoeydawn/"
+                          class="social-icon social-icon-linkedin"
+                          target="_blank"
+                        >
+                          <i class="fab fa-linkedin-in"></i>
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.instagram.com/spacecowgirlgringa/"
+                          class="social-icon social-icon-facebook"
+                          target="_blank"
+                        >
+                          <i class="fab fa-instagram"></i>
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://t.me/zoeydawn"
+                          class="social-icon social-icon-facebook"
+                          target="_blank"
+                        >
+                          <i class="fab fa-telegram"></i>
+                          <i class="fab fa-telegram"></i>
+                        </a>
+                      </li>
+                      <!-- TODO: create a whatsapp color style -->
+                      <li>
+                        <a
+                          href="https://wa.me/19199601124"
+                          class="social-icon social-icon-twitter"
+                          target="_blank"
+                        >
+                          <i class="fab fa-whatsapp"></i>
+                          <i class="fab fa-whatsapp"></i>
+                        </a>
+                      </li>
+                      <!-- <li>
 											<a href="#" class="social-icon social-icon-vimeo" target="_blank">
 												<i class="fab fa-angellist"></i>
 												<i class="fab fa-angellist"></i>
 											</a>
 										</li> -->
-									</ul><!--End list-social -->
-								</div><!--End banner-content -->
-							</div><!--End col-sm-12 -->
-						</div><!--End row -->
-					</div><!--End container -->
-				</div><!--End display-table-cell -->
-			</div><!--End display-table -->
-		</div><!--End home-top-banner -->
-	</section>
-	<!-- end slider and home section -->
+                    </ul>
+                    <!--End list-social -->
+                  </div>
+                  <!--End banner-content -->
+                </div>
+                <!--End col-sm-12 -->
+              </div>
+              <!--End row -->
+            </div>
+            <!--End container -->
+          </div>
+          <!--End display-table-cell -->
+        </div>
+        <!--End display-table -->
+      </div>
+      <!--End home-top-banner -->
+    </section>
+    <!-- end slider and home section -->
 
-	<!-- start About section -->
-	<section id="about" class="about about-timeline-style">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<!-- start section title-wrap -->
-					<div class="title-wrap">
-						<div class="title-border-svg">
-							<h2 class="section-title">My <span>Story</span></h2>
-							<svg height="76" width="100%" xmlns="http://www.w3.org/2000/svg">
-								<rect class="title-border-svg-shape" height="76" width="100%" />
-							</svg>
-						</div>
-					</div><!-- end section title-wrap -->
-				</div><!-- end col -->
-				<div class="col-sm-12">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="profile-image">
-								<img src="images/profile/profile-image-2.jpg" alt="img-about">
-							</div><!-- end profile-image -->
-						</div><!-- end col -->
-						<div class="col-sm-6">
-							<div class="about-text">
-								<!-- start title-box -->
-								<div class="title-box">
-									<h3 class="sub-title">About <strong>Me</strong></h3>
-								</div><!-- end title-box -->
+    <!-- start About section -->
+    <section id="about" class="about about-timeline-style">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <!-- start section title-wrap -->
+            <div class="title-wrap">
+              <div class="title-border-svg">
+                <h2 class="section-title">My <span>Story</span></h2>
+                <svg
+                  height="76"
+                  width="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    class="title-border-svg-shape"
+                    height="76"
+                    width="100%"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!-- end section title-wrap -->
+          </div>
+          <!-- end col -->
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="profile-image">
+                  <img
+                    src="images/profile/profile-image-2.jpg"
+                    alt="img-about"
+                  />
+                </div>
+                <!-- end profile-image -->
+              </div>
+              <!-- end col -->
+              <div class="col-sm-6">
+                <div class="about-text">
+                  <!-- start title-box -->
+                  <div class="title-box">
+                    <h3 class="sub-title">About <strong>Me</strong></h3>
+                  </div>
+                  <!-- end title-box -->
 
-								<p>
+                  <p>
+                    Hi, I'm Zoey! I am a full stack web developer who
+                    specializes in modern web technologies. I am an expert in
+                    web app development using JavaScript/TypeScript and React.
+                    Some of my favorite technologies include Next.js, Supabase,
+                    Firebase, and the T3 stack. I also like fitness, yoga,
+                    literature (especially science fiction), cats, tattoos,
+                    retro gaming, and Linux.
+                  </p>
+                  <p>
+                    I grew up in Chapel Hill, North Carolina and I have dual
+                    US/Canadian citizenship. I speak English, Spanish, and my
+                    French is improving by the day. I spent five years living in
+                    Medellin, Colombia with my wife before moving to Montreal,
+                    Quebec in 2024.
+                  </p>
+                  <p>
+                    I have been a computer geek since I was old enough to sit in
+                    front of a computer. I wrote my first code when I was a
+                    teenager modifying my MySpace page. My web development
+                    journey began with me dabbling with HTML and CSS just for
+                    fun, but when I started playing with JavaScript I fell in
+                    love and dove in head first. The next thing I knew I was
+                    learning to build apps with React and Node. Soon thereafter,
+                    this became my career.
+                  </p>
+                  <p>
+                    I have over five years experience with small startups,
+                    mostly working remotely. I am interested in remote work or
+                    an in-office position in Montreal.
+                  </p>
+                  <p>
+                    My favorite browser is Firefox, my favorite editor is Neovim
+                    (but I also use VS Code), my favorite operating system is
+                    Arch Linux, my favorite password manager is Bitwarden, and
+                    my favorite hacking tool is Burp Suite.
+                  </p>
+                  <p>
+                    Thanks for visiting my website, I am available if you would
+                    like to chat :)
+                  </p>
+
+                  <!-- <p>
 									Hi, I'm Zoey!
 									I am a full stack web developer who specializes in modern web technologies. I am an
 									expert in web app development using JavaScript/TypeScript and React. Some of my
@@ -229,243 +346,300 @@
 								</p>
 								<p>
 									Thanks for visiting my web site, I am available if you would like to chat :)
-								</p>
-								<div class="button-holder">
-									<a class="btn btn-shutter-out-horizontal" href="zoey-moore-resume.pdf"
-										target="_blank">Download Resume</a>
-									<a class="btn btn-shutter-out-horizontal" href="#contact">Contact Me</a>
-								</div><!-- end button-holder -->
-							</div><!-- about-text -->
-						</div><!-- end col -->
-					</div><!-- end row -->
-				</div><!-- end col-sm-12 -->
-				<div class="col-sm-12">
-					<div class="icon-holder experience">
-						<i class="fas fa-paper-plane"></i>
-						<span class="sub-title text-bold">Work Experience</span>
-					</div>
-					<ul class="timeline">
-						<li class="timeline-right">
-							<div class="timeline-badge">
-								<i class="fas fa-calendar-alt"></i>
-								<p class="date-inverted">2018 - 2022</p>
-							</div><!-- end timeline-badge -->
-							<div class="timeline-panel">
-								<div class="experience-content">
-									<h4>Shed Suite</h4>
-									<h5>Lead Front End Developer</h5>
-									<p>Contributed to the success of a complex business management solution for portable
-										shed manufacturers. I was primarily responsible for the development and
-										maintenance
-										of our various applications. I was initially hired to work on the front end of
-										our web apps,
-										but quickly started picking up tasks on the back end as well as our mobile app.
-									</p>
-									<p>
-										While at Shed Suite, I implemented new modules and features on the front end,
-										improved
-										user experience on existing pages, made our views more responsive, and oversaw
-										the
-										development of our new e-commerce platform.
-									</p>
-									<p>
-										In addition to writing code, I also interviewed candidates for developer
-										positions, on-
-										boarded and oversaw junior developers, and exposed and mitigated security
-										vulnerabilities in our platforms.
-									</p>
-								</div>
-							</div><!--end timeline-panel -->
-						</li><!-- end timeline-right -->
-						<li class="timeline-left">
-							<div class="timeline-badge">
-								<i class="fas fa-calendar-alt"></i>
-								<p class="date">2017 - 2018</p>
-							</div><!-- end timeline-badge -->
-							<div class="timeline-panel">
-								<div class="experience-content">
-									<h4>Language in Motion</h4>
-									<h5>Front End Developer</h5>
-									<p>
-										Worked with a diverse, remote team to develop and maintain an advanced language
-										learning platform. As a member of the front end team, I worked to maximize
-										efficiency
-										and user experience within a complex React.js environment. My responsibilities
-										involved
-										building new, responsive views, adding new features, improving responsiveness,
-										fixing
-										bugs, and updating the React state management from Flux to Redux.
-									</p>
-									<p>
-										I look back at my experience with Language in Motion as wonderful learning
-										experience
-										that gave me the opportunity to master my front end skills and prepare me for
-										future
-										roles.
-									</p>
-								</div>
-							</div><!-- end timeline-panel -->
-						</li><!-- end timeline-left -->
-						<li class="timeline-right">
-							<div class="timeline-badge">
-								<i class="fas fa-calendar-alt"></i>
-								<p class="date-inverted">2017 - 2018</p>
-							</div><!-- end timeline-badge -->
-							<div class="timeline-panel">
-								<div class="experience-content">
-									<h4>The Coding Bootcamp at UNC</h4>
-									<h5>Teaching Assistant</h5>
-									<p>
-										Supported an intensive, 6 month coding bootcamp based out of UNC Chapel Hill
-										involving 250+ hours of in-class teaching through an extensive curriculum using
-										HTML 5,
-										CSS 3, JavaScript, jQuery, Git, Node.js. Express.js, MySQL 5, Laravel, TDD, SEO,
-										and cloud
-										application development.
-									</p>
-									<p>
-										I enjoyed my time at the Coding Bootcamp, the students and staff were a delight
-										to work
-										with and I learned a lot from the instructors and through working with the
-										students. I do
-										not plan on working another teaching job however, because I realize I still
-										enjoy writing
-										code more than I do teaching it.
-									</p>
-								</div>
-							</div><!-- end timeline-panel -->
-						</li><!-- end timeline-right -->
-					</ul><!-- end timeline -->
-				</div><!-- end col-sm-12 -->
-				<!-- <div class="col-sm-12">
+								</p> -->
+                  <div class="button-holder">
+                    <a
+                      class="btn btn-shutter-out-horizontal"
+                      href="zoey-moore-resume.pdf"
+                      target="_blank"
+                      >Download Resume</a
+                    >
+                    <a class="btn btn-shutter-out-horizontal" href="#contact"
+                      >Contact Me</a
+                    >
+                  </div>
+                  <!-- end button-holder -->
+                </div>
+                <!-- about-text -->
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- end col-sm-12 -->
+          <div class="col-sm-12">
+            <div class="icon-holder experience">
+              <i class="fas fa-paper-plane"></i>
+              <span class="sub-title text-bold">Work Experience</span>
+            </div>
+            <ul class="timeline">
+              <li class="timeline-right">
+                <div class="timeline-badge">
+                  <i class="fas fa-calendar-alt"></i>
+                  <p class="date-inverted">2018 - 2022</p>
+                </div>
+                <!-- end timeline-badge -->
+                <div class="timeline-panel">
+                  <div class="experience-content">
+                    <h4>Shed Suite</h4>
+                    <h5>Lead Front End Developer</h5>
+                    <p>
+                      Contributed to the success of a complex business
+                      management solution for portable shed manufacturers. I was
+                      primarily responsible for the development and maintenance
+                      of our various applications. I was initially hired to work
+                      on the front end of our web apps, but quickly started
+                      picking up tasks on the back end as well as our mobile
+                      app.
+                    </p>
+                    <p>
+                      While at Shed Suite, I implemented new modules and
+                      features on the front end, improved user experience on
+                      existing pages, made our views more responsive, and
+                      oversaw the development of our new e-commerce platform.
+                    </p>
+                    <p>
+                      In addition to writing code, I also interviewed candidates
+                      for developer positions, on- boarded and oversaw junior
+                      developers, and exposed and mitigated security
+                      vulnerabilities in our platforms.
+                    </p>
+                  </div>
+                </div>
+                <!--end timeline-panel -->
+              </li>
+              <!-- end timeline-right -->
+              <li class="timeline-left">
+                <div class="timeline-badge">
+                  <i class="fas fa-calendar-alt"></i>
+                  <p class="date">2017 - 2018</p>
+                </div>
+                <!-- end timeline-badge -->
+                <div class="timeline-panel">
+                  <div class="experience-content">
+                    <h4>Language in Motion</h4>
+                    <h5>Front End Developer</h5>
+                    <p>
+                      Worked with a diverse, remote team to develop and maintain
+                      an advanced language learning platform. As a member of the
+                      front end team, I worked to maximize efficiency and user
+                      experience within a complex React.js environment. My
+                      responsibilities involved building new, responsive views,
+                      adding new features, improving responsiveness, fixing
+                      bugs, and updating the React state management from Flux to
+                      Redux.
+                    </p>
+                    <p>
+                      I look back at my experience with Language in Motion as
+                      wonderful learning experience that gave me the opportunity
+                      to master my front end skills and prepare me for future
+                      roles.
+                    </p>
+                  </div>
+                </div>
+                <!-- end timeline-panel -->
+              </li>
+              <!-- end timeline-left -->
+              <li class="timeline-right">
+                <div class="timeline-badge">
+                  <i class="fas fa-calendar-alt"></i>
+                  <p class="date-inverted">2017 - 2018</p>
+                </div>
+                <!-- end timeline-badge -->
+                <div class="timeline-panel">
+                  <div class="experience-content">
+                    <h4>The Coding Bootcamp at UNC</h4>
+                    <h5>Teaching Assistant</h5>
+                    <p>
+                      Supported an intensive, 6 month coding bootcamp based out
+                      of UNC Chapel Hill involving 250+ hours of in-class
+                      teaching through an extensive curriculum using HTML 5, CSS
+                      3, JavaScript, jQuery, Git, Node.js. Express.js, MySQL 5,
+                      Laravel, TDD, SEO, and cloud application development.
+                    </p>
+                    <p>
+                      I enjoyed my time at the Coding Bootcamp, the students and
+                      staff were a delight to work with and I learned a lot from
+                      the instructors and through working with the students. I
+                      do not plan on working another teaching job however,
+                      because I realize I still enjoy writing code more than I
+                      do teaching it.
+                    </p>
+                  </div>
+                </div>
+                <!-- end timeline-panel -->
+              </li>
+              <!-- end timeline-right -->
+            </ul>
+            <!-- end timeline -->
+          </div>
+          <!-- end col-sm-12 -->
+          <!-- <div class="col-sm-12">
 					education section
 				</div> --><!-- end col-sm-12 -->
-			</div><!-- end row -->
-		</div><!-- end container -->
-	</section>
-	<!-- end About section -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end About section -->
 
-	<!-- start service -->
-	<section id="service" class="service service-3-column parallax">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<!-- start section title-wrap -->
-					<div class="title-wrap">
-						<div class="title-border-svg">
-							<h2 class="section-title"><span>skills</span> & <span>expertise</span></h2>
-							<svg height="76" width="100%" xmlns="http://www.w3.org/2000/svg">
-								<rect class="title-border-svg-shape" height="76" width="100%" />
-							</svg>
-						</div>
-					</div><!-- end section title-wrap -->
-					<!-- <div class="intro-text text-center"> TODO: add something here?
+    <!-- start service -->
+    <section id="service" class="service service-3-column parallax">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <!-- start section title-wrap -->
+            <div class="title-wrap">
+              <div class="title-border-svg">
+                <h2 class="section-title">
+                  <span>skills</span> & <span>expertise</span>
+                </h2>
+                <svg
+                  height="76"
+                  width="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    class="title-border-svg-shape"
+                    height="76"
+                    width="100%"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!-- end section title-wrap -->
+            <!-- <div class="intro-text text-center"> TODO: add something here?
 						A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
 						which I enjoy with my heart.
 					</div> -->
-					<!-- end intro-text -->
-				</div><!-- end col -->
-				<div class="col-md-4 col-xs-6">
-					<div class="service-wrap color-border">
-						<div class="service-box">
-							<div class="service-box-wrap">
-								<i class="fas fa-cogs"></i>
-								<h3>Web App Development</h3>
-								<p class="app-dev-service">I have been doing web app development for over 5 years and
-									have extensive experience
-									working with <span>React</span> and <span>JavaScript</span>. Some of my favorite
-									technologies to work with are
-									<span>Next.js</span>, <span>Firebase</span>, <span>Supabase</span>,
-									<span>Typescript</span>, <span>Git</span>,
-									<span>Tailwind CSS</span>, and <span>Linux</span>.
-								</p>
-								<p class="app-dev-service">
-									I am also familiar with <span>Node.js</span>, <span>SQL</span> Databases
-									(PostgreSQL, SQLight, etc.), <span>GraphQL</span>,
-									<span>Express.js</span>, <span>MongoDB</span>, <span>app security</span> basics,
-									<span>Sass</span>, and of course <span>HTML</span> and <span>CSS</span>.
-								</p>
-								<p>
-									Some technologies I would love to learn more about include <span>Rust, Svelt,
-										Redis</span>, and
-									<span>SurrealDB</span>.
-								</p>
-								<!-- <a class="btn btn-shutter-out-horizontal" href="single-service.html">View Details</a> -->
-							</div>
-						</div><!-- end service-box -->
-					</div><!-- end service-wrap -->
-				</div><!-- end col -->
-				<div class="col-md-4 col-xs-6">
-					<div class="service-wrap color-border">
-						<div class="service-box">
-							<div class="service-box-wrap">
-								<i class="fas fa-paint-brush"></i>
-								<h3>Coding Standards</h3>
-								<p>I believe in writing code that is clean, concise, easy to read, and secure. A common
-									problem I have encountered is sloppy code that is difficult to read and work with.
-									This is typically because devs are in a rush or are prioritizing functionality over
-									cleanliness. I believe teams should utilize strict coding standards, code reviews,
-									and formatting tools (such as Prettier and ESLint) to write code that is clean,
-									consistent, and easy to work with.
-								</p>
-								<!-- <a class="btn btn-shutter-out-horizontal" href="single-service.html">View Details</a> -->
-							</div>
-						</div><!-- end service-box -->
-					</div><!-- end service-wrap -->
-				</div><!-- end col -->
-				<div class="col-md-4 col-xs-6">
-					<div class="service-wrap color-border">
-						<div class="service-box">
-							<div class="service-box-wrap">
-								<i class="fas fa-lock"></i>
-								<h3>Application Security</h3>
-								<p>I am a security enthusiast and member of OWASP. I believe it is important for
-									developers
-									to
-									understand common web app vulnerabilities and how to mitigate them, and for all
-									employees to understand security best practices (such as using password managers and
-									2FA). Something I
-									thoroughly enjoy is poking at web apps with Burp Suite to see if I can expose
-									vulnerabilities (but only when I have permission from the project owner, of course).
-									I will also enthusiastically take on security related tasks and work with security
-									professionals to secure your application.
-								</p>
-								<!-- <a class="btn btn-shutter-out-horizontal" href="single-service.html">View Details</a> -->
-							</div>
-						</div><!-- end service-box -->
-					</div><!-- end service-wrap -->
-				</div><!-- end col -->
-				<div class="col-md-4 col-xs-6">
-					<div class="service-wrap color-border">
-						<div class="service-box">
-							<div class="service-box-wrap">
-								<i class="fas fa-globe"></i>
-								<h3>Outsourcing</h3>
-								<p>
-									I would love the opportunity to assemble a team of developers in Colombia for
-									receiving contract work for companies in North America. I believe Colombia offers
-									great opportunities for productive and skilled talent at competitive rates. As a
-									native English speaker who has lived in Colombia for five years and understands the
-									language and culture, and who has experience as a lead developer, I think this
-									project would be an excellent use of my skills.
-								</p>
-								<p>
-									If this idea sounds interesting, I would love to talk more about it.
-								</p>
-								<!-- <a class="btn btn-shutter-out-horizontal" href="single-service.html">View Details</a> -->
-							</div>
-						</div><!-- end service-box -->
-					</div><!-- end service-wrap -->
-				</div><!-- end col -->
-			</div><!-- end row -->
-		</div><!--End Container -->
-	</section>
-	<!-- end service -->
+            <!-- end intro-text -->
+          </div>
+          <!-- end col -->
+          <div class="col-md-4 col-xs-6">
+            <div class="service-wrap color-border">
+              <div class="service-box">
+                <div class="service-box-wrap">
+                  <i class="fas fa-cogs"></i>
+                  <h3>Web App Development</h3>
+                  <p class="app-dev-service">
+                    I have been doing web app development for over 5 years and
+                    have extensive experience working with
+                    <span>React</span> and <span>JavaScript</span>. Some of my
+                    favorite technologies to work with are <span>Next.js</span>,
+                    <span>Firebase</span>, <span>Supabase</span>,
+                    <span>Typescript</span>, <span>Git</span>,
+                    <span>Tailwind CSS</span>, and <span>Linux</span>.
+                  </p>
+                  <p class="app-dev-service">
+                    I am also familiar with <span>Node.js</span>,
+                    <span>SQL</span> Databases (PostgreSQL, SQLight, etc.),
+                    <span>GraphQL</span>, <span>Express.js</span>,
+                    <span>MongoDB</span>, <span>app security</span> basics,
+                    <span>Sass</span>, and of course <span>HTML</span> and
+                    <span>CSS</span>.
+                  </p>
+                  <p>
+                    Some technologies I would love to learn more about include
+                    <span>Rust, Svelt, Redis</span>, and <span>SurrealDB</span>.
+                  </p>
+                  <!-- <a class="btn btn-shutter-out-horizontal" href="single-service.html">View Details</a> -->
+                </div>
+              </div>
+              <!-- end service-box -->
+            </div>
+            <!-- end service-wrap -->
+          </div>
+          <!-- end col -->
+          <div class="col-md-4 col-xs-6">
+            <div class="service-wrap color-border">
+              <div class="service-box">
+                <div class="service-box-wrap">
+                  <i class="fas fa-paint-brush"></i>
+                  <h3>Coding Standards</h3>
+                  <p>
+                    I believe in writing code that is clean, concise, easy to
+                    read, and secure. A common problem I have encountered is
+                    sloppy code that is difficult to read and work with. This is
+                    typically because devs are in a rush or are prioritizing
+                    functionality over cleanliness. I believe teams should
+                    utilize strict coding standards, code reviews, and
+                    formatting tools (such as Prettier and ESLint) to write code
+                    that is clean, consistent, and easy to work with.
+                  </p>
+                  <!-- <a class="btn btn-shutter-out-horizontal" href="single-service.html">View Details</a> -->
+                </div>
+              </div>
+              <!-- end service-box -->
+            </div>
+            <!-- end service-wrap -->
+          </div>
+          <!-- end col -->
+          <div class="col-md-4 col-xs-6">
+            <div class="service-wrap color-border">
+              <div class="service-box">
+                <div class="service-box-wrap">
+                  <i class="fas fa-lock"></i>
+                  <h3>Application Security</h3>
+                  <p>
+                    I am a security enthusiast and member of OWASP. I believe it
+                    is important for developers to understand common web app
+                    vulnerabilities and how to mitigate them, and for all
+                    employees to understand security best practices (such as
+                    using password managers and 2FA). Something I thoroughly
+                    enjoy is poking at web apps with Burp Suite to see if I can
+                    expose vulnerabilities (but only when I have permission from
+                    the project owner, of course). I will also enthusiastically
+                    take on security related tasks and work with security
+                    professionals to secure your application.
+                  </p>
+                  <!-- <a class="btn btn-shutter-out-horizontal" href="single-service.html">View Details</a> -->
+                </div>
+              </div>
+              <!-- end service-box -->
+            </div>
+            <!-- end service-wrap -->
+          </div>
+          <!-- end col -->
+          <div class="col-md-4 col-xs-6">
+            <div class="service-wrap color-border">
+              <div class="service-box">
+                <div class="service-box-wrap">
+                  <i class="fas fa-globe"></i>
+                  <h3>Outsourcing</h3>
+                  <p>
+                    I would love the opportunity to assemble a team of
+                    developers in Colombia for receiving contract work for
+                    companies in North America. I believe Colombia offers great
+                    opportunities for productive and skilled talent at
+                    competitive rates. As a native English speaker who has lived
+                    in Colombia for five years and understands the language and
+                    culture, and who has experience as a lead developer, I think
+                    this project would be an excellent use of my skills.
+                  </p>
+                  <p>
+                    If this idea sounds interesting, I would love to talk more
+                    about it.
+                  </p>
+                  <!-- <a class="btn btn-shutter-out-horizontal" href="single-service.html">View Details</a> -->
+                </div>
+              </div>
+              <!-- end service-box -->
+            </div>
+            <!-- end service-wrap -->
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!--End Container -->
+    </section>
+    <!-- end service -->
 
-	<!-- start clients -->
-	<!-- end clients -->
+    <!-- start clients -->
+    <!-- end clients -->
 
-	<!-- start success-story --
+    <!-- start success-story --
 	<section id="success-story" class="success-story parallax">
 		<div class="container">
 			<div class="row">
@@ -527,10 +701,10 @@
 	</section>
 	<!-End #success-story -->
 
-	<!-- start Pricing Plan -->
-	<!-- end Pricing Plan -->
+    <!-- start Pricing Plan -->
+    <!-- end Pricing Plan -->
 
-	<!-- start portfolio ->
+    <!-- start portfolio ->
 	<section id="portfolio" class="filter-section parallax">
 		<div class="container">
 			<div class="row">
@@ -738,201 +912,257 @@
 	</section>
 	<!- end portfolio -->
 
-	<!-- start team -->
-	<!-- end team -->
+    <!-- start team -->
+    <!-- end team -->
 
-	<!--  start quotes-section -->
-	<!-- end quotes-section -->
+    <!--  start quotes-section -->
+    <!-- end quotes-section -->
 
-	<!-- start blog -->
-	<!-- end blog -->
+    <!-- start blog -->
+    <!-- end blog -->
 
-	<!-- start testimonials -->
-	<!-- end testimonials -->
+    <!-- start testimonials -->
+    <!-- end testimonials -->
 
-	<!-- start contact -->
-	<section id="contact" class="contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<!-- start section title-wrap -->
-					<div class="title-wrap">
-						<div class="title-border-svg">
-							<h2 class="section-title"><span>Contact</span> me</h2>
-							<svg height="76" width="100%" xmlns="http://www.w3.org/2000/svg">
-								<rect class="title-border-svg-shape" height="76" width="100%" />
-							</svg>
-						</div>
-					</div><!-- end section title-wrap -->
-					<div class="intro-text text-center">
-						I would love to chat :)
-					</div><!-- end intro-text -->
-				</div><!-- end col -->
+    <!-- start contact -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <!-- start section title-wrap -->
+            <div class="title-wrap">
+              <div class="title-border-svg">
+                <h2 class="section-title"><span>Contact</span> me</h2>
+                <svg
+                  height="76"
+                  width="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    class="title-border-svg-shape"
+                    height="76"
+                    width="100%"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!-- end section title-wrap -->
+            <div class="intro-text text-center">I would love to chat :)</div>
+            <!-- end intro-text -->
+          </div>
+          <!-- end col -->
 
-				<!-- start contact form -->
-				<!-- end contact form -->
+          <!-- start contact form -->
+          <!-- end contact form -->
 
-				<!-- start contact Info -->
-				<div class="col-sm-12 text-center">
-					<div class="row">
-						<div class="col-md-4">
-							<div class="contact-item">
-								<div class="contact-item-inner">
-									<div class="contact-icon">
-										<i class="fas fa-home"></i>
-									</div>
-									<div class="contact-desc">
-										<h4>Montreal, Quebec, Canada</h4>
-									</div>
-								</div><!-- end contact-item-inner -->
-							</div><!-- end contact-item -->
-						</div><!-- end col -->
-						<div class="col-md-4">
-							<div class="contact-item">
-								<div class="contact-item-inner">
-									<div class="contact-icon">
-										<i class="fas fa-envelope"></i>
-									</div>
-									<div class="contact-desc">
-										<h4><a href="mailto:contact@zoey.ninja">contact@zoey.ninja</a></h4>
-									</div>
-								</div><!-- end contact-item-inner -->
-							</div><!-- end contact-item -->
-						</div><!-- end col -->
-						<div class="col-md-4">
-							<div class="contact-item">
-								<div class="contact-item-inner">
-									<div class="contact-icon">
-										<i class="fas fa-phone"></i>
-									</div>
-									<div class="contact-desc">
-										<h4><a href="tel:+19199601124">+1 919 960 1124</a></h4>
-									</div>
-								</div><!-- end contact-item-inner -->
-							</div><!-- end contact-item -->
-						</div><!-- end col -->
-					</div><!-- end row -->
-				</div><!-- end col-sm-12 -->
-				<!-- end contact Info -->
+          <!-- start contact Info -->
+          <div class="col-sm-12 text-center">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="contact-item">
+                  <div class="contact-item-inner">
+                    <div class="contact-icon">
+                      <i class="fas fa-home"></i>
+                    </div>
+                    <div class="contact-desc">
+                      <h4>Montreal, Quebec, Canada</h4>
+                    </div>
+                  </div>
+                  <!-- end contact-item-inner -->
+                </div>
+                <!-- end contact-item -->
+              </div>
+              <!-- end col -->
+              <div class="col-md-4">
+                <div class="contact-item">
+                  <div class="contact-item-inner">
+                    <div class="contact-icon">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-desc">
+                      <h4>
+                        <a href="mailto:contact@zoey.ninja"
+                          >contact@zoey.ninja</a
+                        >
+                      </h4>
+                    </div>
+                  </div>
+                  <!-- end contact-item-inner -->
+                </div>
+                <!-- end contact-item -->
+              </div>
+              <!-- end col -->
+              <div class="col-md-4">
+                <div class="contact-item">
+                  <div class="contact-item-inner">
+                    <div class="contact-icon">
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-desc">
+                      <h4><a href="tel:+19199601124">+1 919 960 1124</a></h4>
+                    </div>
+                  </div>
+                  <!-- end contact-item-inner -->
+                </div>
+                <!-- end contact-item -->
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- end col-sm-12 -->
+          <!-- end contact Info -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end contact -->
 
-			</div><!-- end row -->
-		</div><!-- end container -->
-	</section>
-	<!-- end contact -->
+    <!-- start footer -->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="footer-top clearfix">
+              <div class="row">
+                <div class="column col-md-4">
+                  <h4 class="widget-title">Contact <span>Details</span></h4>
+                  <ul class="contact-info list-unstyled">
+                    <li>
+                      <i class="fas fa-home"></i> Montreal, Quebec, Canada
+                    </li>
+                    <li>
+                      <i class="fas fa-phone"></i>
+                      <a href="tel:+19199601124">+1 919 960 1124</a>
+                    </li>
+                    <!-- <li><i class="fas fa-fax"></i> 000 0000 0000</li> -->
+                    <li>
+                      <i class="fas fa-envelope"></i>
+                      <a href="mailto:contact@zoey.ninja">contact@zoey.ninja</a>
+                    </li>
+                  </ul>
+                  <!-- end contact-info  -->
 
-	<!-- start footer -->
-	<footer id="footer" class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="footer-top clearfix">
-						<div class="row">
-							<div class="column col-md-4">
-								<h4 class="widget-title">Contact <span>Details</span></h4>
-								<ul class="contact-info list-unstyled">
-									<li><i class="fas fa-home"></i> Montreal, Quebec, Canada</li>
-									<li><i class="fas fa-phone"></i> <a href="tel:+19199601124">+1 919 960 1124</a>
-									</li>
-									<!-- <li><i class="fas fa-fax"></i> 000 0000 0000</li> -->
-									<li><i class="fas fa-envelope"></i> <a
-											href="mailto:contact@zoey.ninja">contact@zoey.ninja</a></li>
-								</ul><!-- end contact-info  -->
-
-								<ul class="list-inline list-social clearfix">
-									<li>
-										<a href="https://github.com/zoeydawn" class="social-icon social-icon-facebook"
-											target="_blank">
-
-											<i class="fab fa-github"></i>
-											<i class="fab fa-github"></i>
-										</a>
-									</li>
-									<!-- <li>
+                  <ul class="list-inline list-social clearfix">
+                    <li>
+                      <a
+                        href="https://github.com/zoeydawn"
+                        class="social-icon social-icon-facebook"
+                        target="_blank"
+                      >
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <!-- <li>
 										<a href=""
 											class="social-icon social-icon-twitter" target="_blank">
 											<i class="fab fa-mastodon"></i>
 											<i class="fab fa-mastodon"></i>
 										</a>
 									</li> -->
-									<li>
-										<a href="https://www.linkedin.com/in/zoeydawn/"
-											class="social-icon social-icon-linkedin" target="_blank">
-											<i class="fab fa-linkedin-in"></i>
-											<i class="fab fa-linkedin-in"></i>
-										</a>
-									</li>
-									<li>
-										<a href="https://www.instagram.com/spacecowgirlgringa/"
-											class="social-icon social-icon-facebook" target="_blank">
-											<i class="fab fa-instagram"></i>
-											<i class="fab fa-instagram"></i>
-										</a>
-									</li>
-									<li>
-										<a href="https://t.me/zoeydawn" class="social-icon social-icon-facebook"
-											target="_blank">
-											<i class="fab fa-telegram"></i>
-											<i class="fab fa-telegram"></i>
-										</a>
-									</li>
-									<li>
-										<a href="https://wa.me/19199601124" class="social-icon social-icon-twitter"
-											target="_blank">
-											<i class="fab fa-whatsapp"></i>
-											<i class="fab fa-whatsapp"></i>
-										</a>
-									</li>
-									<!-- <li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/zoeydawn/"
+                        class="social-icon social-icon-linkedin"
+                        target="_blank"
+                      >
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/spacecowgirlgringa/"
+                        class="social-icon social-icon-facebook"
+                        target="_blank"
+                      >
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://t.me/zoeydawn"
+                        class="social-icon social-icon-facebook"
+                        target="_blank"
+                      >
+                        <i class="fab fa-telegram"></i>
+                        <i class="fab fa-telegram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://wa.me/19199601124"
+                        class="social-icon social-icon-twitter"
+                        target="_blank"
+                      >
+                        <i class="fab fa-whatsapp"></i>
+                        <i class="fab fa-whatsapp"></i>
+                      </a>
+                    </li>
+                    <!-- <li>
 										<a href="#" class="social-icon social-icon-vimeo" target="_blank">
 											<i class="fab fa-angellist"></i>
 											<i class="fab fa-angellist"></i>
 										</a>
 									</li> -->
-								</ul><!-- end list-social -->
+                  </ul>
+                  <!-- end list-social -->
+                </div>
+                <!-- end col -->
+              </div>
+              <!-- end row -->
+            </div>
+            <!-- end footer-top  -->
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+        <hr />
+        <div class="row">
+          <div class="col-sm-12">
+            <a href="#" class="footer-logo-link"
+              ><img
+                class="footer-logo"
+                src="images/
+						logo.png"
+                alt="Steve"
+            /></a>
+            <p class="text-center copyright">
+              &copy; <span id="mgsYear"></span> Zoey Moore All rights reserved.
+            </p>
+          </div>
 
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </footer>
+    <!-- end footer -->
 
+    <a href="#" class="scrollup"><i class="fas fa-arrow-circle-up"></i></a>
 
-
-
-							</div><!-- end col -->
-						</div><!-- end row -->
-					</div><!-- end footer-top  -->
-				</div><!-- end col -->
-			</div><!-- end row -->
-			<hr>
-			<div class="row">
-				<div class="col-sm-12">
-					<a href="#" class="footer-logo-link"><img class="footer-logo" src="images/
-						logo.png" alt="Steve"></a>
-					<p class="text-center copyright">&copy; <span id="mgsYear"></span> Zoey Moore All rights reserved.
-				</div><!-- end col -->
-			</div><!-- end row -->
-		</div><!-- end container -->
-	</footer>
-	<!-- end footer -->
-
-	<a href="#" class="scrollup"><i class="fas fa-arrow-circle-up"></i></a>
-
-	<!-- jQuery Library -->
-	<script src="js/jquery-3.5.1.min.js"></script>
-	<!-- Bootstrap Js -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Isotope Filtring Js -->
-	<script src="js/isotope.pkgd.min.js"></script>
-	<!-- Lightbox Js -->
-	<script src="js/lightbox.min.js"></script>
-	<!-- owl.carousel Js -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Form validator Js -->
-	<script src="js/validator.min.js"></script>
-	<!-- ajaxchimp Js -->
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<!-- counterup Js -->
-	<script src="js/waypoint.js"></script>
-	<script src="js/jquery.counterup.min.js"></script>
-	<!-- Template main Js -->
-	<script src="js/main.js"></script>
-
-</body>
-
+    <!-- jQuery Library -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Isotope Filtring Js -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- Lightbox Js -->
+    <script src="js/lightbox.min.js"></script>
+    <!-- owl.carousel Js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Form validator Js -->
+    <script src="js/validator.min.js"></script>
+    <!-- ajaxchimp Js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <!-- counterup Js -->
+    <script src="js/waypoint.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Template main Js -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
